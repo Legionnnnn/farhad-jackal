@@ -1,3 +1,2 @@
-# ROS build files
-jackal_ws/build/*
-jackal_ws/devel/*
+build/
+devel/
