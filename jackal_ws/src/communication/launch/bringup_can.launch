@@ -1,0 +1,10 @@
+<launch>
+  <!-- Bridge CAN <-> ROS -->
+  <node pkg="socketcan_bridge" type="socketcan_bridge_node" name="can_bridge" output="screen">
+    <param name="interface" value="can0" />
+  </node>
+
+  <!-- Facultatif : écoute les trames reçues -->
+  <node pkg="topic_tools" type="relay" name="echo_can"
+        args="/received_messages /can_debug" output="screen"/>
+</launch>

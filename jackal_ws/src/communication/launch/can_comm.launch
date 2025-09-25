@@ -1,0 +1,7 @@
+<launch>
+  <!-- Nœud publisher -->
+  <node pkg="communication" type="can_publisher.py" name="can_publisher" output="screen" />
+
+  <!-- Nœud subscriber -->
+  <node pkg="communication" type="can_subscriber.py" name="can_subscriber" output="screen" />
+</launch>
